@@ -39,7 +39,7 @@ export default class Factorial extends Component {
         num--;
         result = num * result;
       }
-      return <Text> {result} </Text>
+      return result
     }
 
     return (

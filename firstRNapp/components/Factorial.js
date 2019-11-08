@@ -1,6 +1,28 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 
+// function factorialize(num) {
+//   if (num < 0)
+//         return -1;
+//   else if (num == 0)
+//       return 1;
+//   else {
+//       return (num * factorialize(num - 1));
+//   }
+// }
+// factorialize(5);
+
+// function factorialize(num) {
+//   if (num === 0 || num === 1)
+//     return 1;
+//   for (var i = num - 1; i >= 1; i--) {
+//     num *= i;
+//   }
+//   return num;
+// }
+// factorialize(5);
+
+
 export default class Factorial extends Component {
   constructor(){
     super()
@@ -27,8 +49,7 @@ export default class Factorial extends Component {
         placeholder="Enter Integer"
         onChangeText={(num) => this.setState({num})}
         value={this.state.num}
-        >
-        </TextInput>
+        ></TextInput>
         <Text style={styles.answer}>{factorial(this.state.num)}</Text>
       </View>
     );

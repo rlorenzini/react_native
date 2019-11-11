@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
 import Factorial from './components/Factorial';
 
 export default class App extends Component {

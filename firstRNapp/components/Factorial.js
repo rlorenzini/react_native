@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
 import FactorialExplain from './FactorialExplain';
 
 // function factorialize(num) {
@@ -31,6 +31,7 @@ export default class Factorial extends Component {
   }
 
   render() {
+
     factorial = (num) => {
       let result = num
       if (num === 0 || num === 1) {

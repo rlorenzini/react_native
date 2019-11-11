@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
+import FactorialExplain from './FactorialExplain';
 
 // function factorialize(num) {
 //   if (num < 0)
@@ -26,7 +27,7 @@ import { StyleSheet, Text, TextInput, View } from 'react-native';
 export default class Factorial extends Component {
   constructor(){
     super()
-    this.state = {num: ''}
+    this.state = {num: '',}
   }
 
   render() {
@@ -51,6 +52,7 @@ export default class Factorial extends Component {
         value={this.state.num}
         ></TextInput>
         <Text style={styles.answer}>{factorial(this.state.num)}</Text>
+        <FactorialExplain />
       </View>
     );
   }
@@ -58,10 +60,11 @@ export default class Factorial extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 250,
   },
   title: {
     fontSize: 42,
@@ -77,5 +80,7 @@ const styles = StyleSheet.create({
   },
   answer: {
     fontSize: 30,
+    height: 35,
+    marginTop: 10,
   }
 });
